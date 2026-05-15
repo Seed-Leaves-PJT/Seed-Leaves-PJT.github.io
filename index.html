@@ -227,6 +227,34 @@
       color: var(--muted);
     }
 
+    .app-info {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    
+    .app-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 20px rgba(47, 111, 78, 0.10);
+      background: white;
+      flex-shrink: 0;
+    }
+    
+    .app-coming {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fff4d8;
+      color: #9b6b00;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    
     .button {
       display: inline-block;
       padding: 12px 18px;
@@ -349,17 +377,64 @@
     <section id="apps">
       <div class="container">
         <h2 class="section-title">Apps</h2>
+    
+        <!-- しまぐるてん -->
         <div class="app-card">
-          <div>
-            <h3>しまぐるてん</h3>
-            <p>
-            赤ちゃんが夢中になる、
-            しましま・ぐるぐる・てんてん遊びを楽しめる親子向けアプリです。
-            </p>
+          <div class="app-info">
+            <img
+              class="app-icon"
+              src="assets/shimaguruten-icon.png"
+              alt="しまぐるてん アイコン"
+            />
+    
+            <div>
+              <h3>しまぐるてん</h3>
+    
+              <p>
+                赤ちゃんが夢中になる、
+                しましま・ぐるぐる・てんてん遊びを楽しめる親子向けアプリです。
+              </p>
+            </div>
           </div>
+    
           <div class="button-row">
             <a class="button" href="shimaguruten/">詳しく見る</a>
-            <a class="button button-secondary" href="shimaguruten/privacy-policy.html">Privacy Policy</a>
+    
+            <a
+              class="button button-secondary"
+              href="shimaguruten/privacy-policy.html"
+            >
+              Privacy Policy
+            </a>
+          </div>
+        </div>
+    
+        <!-- おさんぽクエスト（仮称） -->
+        <div class="app-card" style="margin-top: 24px;">
+          <div class="app-info">
+            <div
+              class="app-icon"
+              style="
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                font-size:40px;
+                background:#f3fbf5;
+              "
+            >
+              🚶
+            </div>
+    
+            <div>
+              <h3>おさんぽクエスト（仮称）</h3>
+    
+              <p>
+                子供とのおさんぽ時間を、
+                もっと楽しく、もっと思い出に変えることを目指したアプリを開発中です。
+              </p>
+    
+              <span class="app-coming">開発中</span>
+            </div>
           </div>
         </div>
       </div>
