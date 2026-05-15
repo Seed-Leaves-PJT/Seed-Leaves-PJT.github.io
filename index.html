@@ -241,7 +241,19 @@
       text-decoration: none;
       background: var(--green-dark);
     }
-
+    .button-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    
+    .button-secondary {
+      background: var(--green-light);
+      color: var(--green-dark);
+    }   
+    .button-secondary:hover {
+      background: #dff1e6;
+    }
     footer {
       padding: 48px 0 32px;
       color: var(--muted);
@@ -342,8 +354,10 @@
             <h3>しまぐるてん</h3>
             <p>配信準備中のアプリです。公開後、このページから詳細をご案内します。</p>
           </div>
-          <!-- privacy-policy.html を作成済みの場合、hrefを実際のファイル名に合わせてください -->
-          <a class="button" href="shimaguruten/privacy-policy.html">Privacy Policy</a>
+          <div class="button-row">
+            <a class="button" href="shimaguruten/">詳しく見る</a>
+            <a class="button button-secondary" href="shimaguruten/privacy-policy.html">Privacy Policy</a>
+          </div>
         </div>
       </div>
     </section>
